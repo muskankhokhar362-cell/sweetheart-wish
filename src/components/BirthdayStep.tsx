@@ -3,12 +3,12 @@ import { motion } from "framer-motion";
 interface BirthdayStepProps {
   title: string;
   message: string;
-  gifUrl: string;
+  imageUrl: string;
   emoji?: string;
   subtext?: string;
 }
 
-const BirthdayStep = ({ title, message, gifUrl, emoji = "💕", subtext }: BirthdayStepProps) => {
+const BirthdayStep = ({ title, message, imageUrl, emoji = "💕", subtext }: BirthdayStepProps) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 60 }}
@@ -42,9 +42,11 @@ const BirthdayStep = ({ title, message, gifUrl, emoji = "💕", subtext }: Birth
         className="w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden mb-8 shadow-lg border-4 border-soft-pink"
       >
         <img
-          src={gifUrl}
+          src={imageUrl}
           alt="Birthday celebration"
           className="w-full h-full object-cover"
+          width={512}
+          height={512}
         />
       </motion.div>
 

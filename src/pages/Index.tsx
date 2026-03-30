@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import FloatingHearts from "@/components/FloatingHearts";
 import BirthdayStep from "@/components/BirthdayStep";
 import CuteCharacter from "@/components/CuteCharacter";
+import ConfettiExplosion from "@/components/ConfettiExplosion";
 import birthday1 from "@/assets/birthday-1.jpg";
 import birthday2 from "@/assets/birthday-2.jpg";
 import birthday3 from "@/assets/birthday-3.jpg";
@@ -79,6 +80,8 @@ const Index = () => {
       {/* Cute animated characters */}
       <CuteCharacter type="teddy" position="left" />
       <CuteCharacter type="panda" position="right" />
+
+      {currentStep === steps.length - 1 && <ConfettiExplosion />}
 
       <AnimatePresence mode="wait">
         <BirthdayStep key={currentStep} {...steps[currentStep]} />

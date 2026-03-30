@@ -3,13 +3,18 @@ import { AnimatePresence, motion } from "framer-motion";
 import FloatingHearts from "@/components/FloatingHearts";
 import BirthdayStep from "@/components/BirthdayStep";
 import CuteCharacter from "@/components/CuteCharacter";
+import birthday1 from "@/assets/birthday-1.jpg";
+import birthday2 from "@/assets/birthday-2.jpg";
+import birthday3 from "@/assets/birthday-3.jpg";
+import birthday4 from "@/assets/birthday-4.jpg";
+import birthday5 from "@/assets/birthday-5.jpg";
 
 const steps = [
   {
     title: "Hey Beautiful... 🌸",
     message:
       "Today is the day the world became a little more beautiful, a little more magical — because you were born. Let me take you on a tiny journey...",
-    gifUrl: "https://media.tenor.com/images/4db3e7ce8390e1b0d71c0e1f8e568aaa/tenor.gif",
+    imageUrl: birthday1,
     emoji: "✨",
     subtext: "Swipe through my heart...",
   },
@@ -17,7 +22,7 @@ const steps = [
     title: "You Light Up Every Room",
     message:
       "Your smile? It's the kind of magic that no spell can create. Every time you laugh, the whole universe stops just to listen. 💫",
-    gifUrl: "https://media.tenor.com/images/3d3617e80b3e43f6df2b63a80e708215/tenor.gif",
+    imageUrl: birthday2,
     emoji: "🌹",
     subtext: "— and you don't even know how special you are",
   },
@@ -25,7 +30,7 @@ const steps = [
     title: "A Year of Being Amazing",
     message:
       "You've been brave, kind, strong, and so incredibly wonderful this year. I hope this new chapter brings you everything your heart desires. 🎀",
-    gifUrl: "https://media.tenor.com/images/87e7e3fb0b4a1e423d77c0f1d3c2a6ff/tenor.gif",
+    imageUrl: birthday3,
     emoji: "🎂",
     subtext: "Every candle holds a wish just for you",
   },
@@ -33,7 +38,7 @@ const steps = [
     title: "You Deserve The World",
     message:
       "If I could gift-wrap happiness, I'd give you an ocean of it. You deserve sunsets, laughter, warm hugs, and all the love in the world. 🌅",
-    gifUrl: "https://media.tenor.com/images/c1db85fa03a0dac90e1f43e8e6dcbc00/tenor.gif",
+    imageUrl: birthday4,
     emoji: "🎁",
     subtext: "— and so much more than words can say",
   },
@@ -41,7 +46,7 @@ const steps = [
     title: "Happy Birthday, My Star! 🌟",
     message:
       "May your day be filled with love, surprises, and pure joy. You are one in a billion, and I'm so grateful you exist. Happy Birthday! 🥳💖",
-    gifUrl: "https://media.tenor.com/images/b37b578e0b2c2b42e762a20e9a681e7d/tenor.gif",
+    imageUrl: birthday5,
     emoji: "💝",
     subtext: "Forever wishing you the happiest days ♥",
   },
@@ -91,7 +96,6 @@ const Index = () => {
           ←
         </motion.button>
 
-        {/* Step dots */}
         <div className="flex gap-2">
           {steps.map((_, i) => (
             <button

@@ -8,7 +8,7 @@ const steps = [
     title: "Hey Beautiful... 🌸",
     message:
       "Today is the day the world became a little more beautiful, a little more magical — because you were born. Let me take you on a tiny journey...",
-    gifUrl: "https://media.giphy.com/media/l0HlGEX1ZORa0aIvu/giphy.gif",
+    gifUrl: "https://media.giphy.com/media/UVk5yzljef0kGiayHj/giphy.gif",
     emoji: "✨",
     subtext: "Swipe through my heart...",
   },
@@ -16,7 +16,7 @@ const steps = [
     title: "You Light Up Every Room",
     message:
       "Your smile? It's the kind of magic that no spell can create. Every time you laugh, the whole universe stops just to listen. 💫",
-    gifUrl: "https://media.giphy.com/media/3o7abB06u9bNzA8lu8/giphy.gif",
+    gifUrl: "https://media.giphy.com/media/WfajkOcICOR7FpYWLe/giphy.gif",
     emoji: "🌹",
     subtext: "— and you don't even know how special you are",
   },
@@ -24,7 +24,7 @@ const steps = [
     title: "A Year of Being Amazing",
     message:
       "You've been brave, kind, strong, and so incredibly wonderful this year. I hope this new chapter brings you everything your heart desires. 🎀",
-    gifUrl: "https://media.giphy.com/media/l4FGjHTcdB6M1Zm5G/giphy.gif",
+    gifUrl: "https://media.giphy.com/media/feio2yIUMtdqWjRiaF/giphy.gif",
     emoji: "🎂",
     subtext: "Every candle holds a wish just for you",
   },
@@ -32,7 +32,7 @@ const steps = [
     title: "You Deserve The World",
     message:
       "If I could gift-wrap happiness, I'd give you an ocean of it. You deserve sunsets, laughter, warm hugs, and all the love in the world. 🌅",
-    gifUrl: "https://media.giphy.com/media/26BRv0ThflsHCqDrG/giphy.gif",
+    gifUrl: "https://media.giphy.com/media/l0MYGb1LuZ3n7dRnO/giphy.gif",
     emoji: "🎁",
     subtext: "— and so much more than words can say",
   },
@@ -66,7 +66,7 @@ const Index = () => {
         className="fixed inset-0 pointer-events-none z-0"
         style={{
           background:
-            "radial-gradient(ellipse at 50% 50%, hsl(340 80% 60% / 0.08) 0%, transparent 70%)",
+            "radial-gradient(ellipse at 50% 50%, hsl(340 80% 60% / 0.06) 0%, transparent 70%)",
         }}
       />
 

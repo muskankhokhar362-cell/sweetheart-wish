@@ -81,6 +81,8 @@ const Index = () => {
       <CuteCharacter type="teddy" position="left" />
       <CuteCharacter type="panda" position="right" />
 
+      {currentStep === steps.length - 1 && <ConfettiExplosion />}
+
       <AnimatePresence mode="wait">
         <BirthdayStep key={currentStep} {...steps[currentStep]} />
       </AnimatePresence>
